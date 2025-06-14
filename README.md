@@ -67,7 +67,7 @@ Before parsing the data the cpe_dict.xml need to be placed in backend/data/cpe_d
 ```bash
 cd backend
 # Parse XML
-python parser_cpe.py
+python parse_cpe.py
 ```
 This created cpes.db which contains the required data
 
