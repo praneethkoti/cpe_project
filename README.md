@@ -79,7 +79,7 @@ python app.py
 ```
 
 ### Frontend (React)
-## In a new terminal window:
+### In a new terminal window:
 ```bash
 cd frontend
 npm install
