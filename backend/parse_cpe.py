@@ -45,21 +45,21 @@ def parse_and_store(xml_path):
                 try:
                     dep_date_22 = datetime.strptime(raw_date, "%Y-%m-%d").date()
                 except:
-                    pass  # Handle non-standard dates
+                    pass 
 
-        # Insert into DB
+        # Insert into database
         cpe_entry = CPE(
             cpe_title=title,
             cpe_22_uri=cpe_22,
             cpe_23_uri=cpe_23,
             reference_links=json.dumps(links),
             cpe_22_deprecation_date=dep_date_22,
-            cpe_23_deprecation_date=None  # Extend later if needed
+            cpe_23_deprecation_date=None 
         )
         session.add(cpe_entry)
 
     session.commit()
     session.close()
 
-# Run this to populate the DB
+# We run this to populate this into database
 parse_and_store("data/cpe_dict.xml")
