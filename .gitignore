@@ -1,0 +1,56 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# Python virtual environments
+venv/
+.venv/
+*/__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# SQLite database file (optional - include only if it's generated or temporary)
+*.db
+
+# VSCode settings (optional)
+.vscode/
+
+# Environment variables
+.env
+*.env
+
+# Node modules
+node_modules/
+
+# Log files
+*.log
+
+# macOS/Windows files
+.DS_Store
+Thumbs.db
+
+# PyInstaller or packaging
+*.spec
+dist/
+build/
+
+# React build files (optional)
+frontend/build/
+
+# Python packages
+pip-wheel-metadata/
+pip.pyz
+
+# Ignore backups or temporary files
+*~
+*.bak
+*.swp
+
+# Ignore CSV exports if they're generated on the fly
+*.csv
+
+# Large local files - DO NOT PUSH
+backend/cpes.db
+backend/data/cpe_dict.xml
