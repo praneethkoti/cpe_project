@@ -90,8 +90,8 @@ npm start
 
 ### API Output
 
-* `/api/cpes?page=1&limit=10`
-* `/api/cpes/search?cpe_title=windows&deprecation_date=2024-01-01`
+* `/api/cpes?page=1&limit=15`
+* `/api/cpes/search?cpe_title=windows&`
 
 ### React UI
 
