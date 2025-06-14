@@ -11,10 +11,10 @@ venv/
 __pycache__/
 *.py[cod]
 
-# SQLite database file (optional - include only if it's generated or temporary)
+# SQLite database file 
 *.db
 
-# VSCode settings (optional)
+# VSCode settings 
 .vscode/
 
 # Environment variables
@@ -27,7 +27,7 @@ node_modules/
 # Log files
 *.log
 
-# macOS/Windows files
+
 .DS_Store
 Thumbs.db
 
@@ -36,8 +36,6 @@ Thumbs.db
 dist/
 build/
 
-# React build files (optional)
-frontend/build/
 
 # Python packages
 pip-wheel-metadata/
@@ -48,9 +46,8 @@ pip.pyz
 *.bak
 *.swp
 
-# Ignore CSV exports if they're generated on the fly
 *.csv
 
-# Large local files - DO NOT PUSH
+# Large local files - DO NOT PUSH HERe
 backend/cpes.db
 backend/data/cpe_dict.xml
