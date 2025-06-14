@@ -65,8 +65,9 @@ pip install -r requirements.txt
 ```
 Before parsing the data the cpe_dict.xml need to be placed in backend/data/cpe_dict.xml
 ```bash
+cd backend
 # Parse XML
-python cpe_parser.py
+python parser_cpe.py
 ```
 This created cpes.db which contains the required data
 
