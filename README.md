@@ -107,18 +107,32 @@ npm start
 ## Project Structure
 
 ```
-.
-├── cpe_parser.py          # For parsing XML
-├── db_setup.py            # Creates tables
-├── data_insert.py         # Puts JSON into DB
-├── api_server.py          # Flask server
-├── cpe_data.db            # Database file
-├── parsed_cpe_data.json   # Parsed JSON
-├── cpe-frontend/          # React App
-├── screenshots/           # Screenshot folder
-└── README.md              # Project Report
+├── backend/
+│   ├── app.py              # Flask API server
+│   ├── database.py         # DB setup and connection
+│   ├── models.py           
+│   └── parse_cpe.py        # CPE data parser
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html      # HTML entry point
+│   └── src/
+│       ├── App.js
+│       ├── CpeTable.jsx
+│       ├── ReferenceLinks.jsx
+│       ├── api.js
+│       └── index.js
+│
+├── Screenshots/            # Sample output images
+│   ├── CPE_Data_Viewer.png
+│   └── ...
+│
+├── .gitignore
+├── .gitattributes
+├── README.md
+├── requirements.txt        # Python dependencies
+└── package.json            # Frontend dependencies
 ```
-
 ---
 
 ## About Me
