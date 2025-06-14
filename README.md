@@ -58,12 +58,12 @@ The goal of this assignment was to:
 
 ```bash
 # Setup virtual environment
-python3 -m venv venv
-source venv/bin/activate
+python -m venv venv
+./venv/Scripts/activate
 
 pip install -r requirements.txt
 ```
-Before parsing the data the cpe_dict.xml need to be placed in backend/data/cpe_dict.xml
+Before parsing the data the extract the xml and rename it to cpe_dict.xml need to be placed in backend/data/cpe_dict.xml
 ```bash
 cd backend
 # Parse XML
