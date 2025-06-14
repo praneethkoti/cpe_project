@@ -62,24 +62,23 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
-
-# Step 1: Parse XML
+```
+Before parsing the data the cpe_dict.xml need to be placed in backend/data/cpe_dict.xml
+```bash
+# Parse XML
 python cpe_parser.py
+```
+This created cpes.db which contains the required data
 
-# Step 2: Create DB
-python db_setup.py
-
-# Step 3: Insert data into DB
-python data_insert.py
-
-# Step 4: Start API server
-python api_server.py
+```bash
+# Start API server
+python app.py
 ```
 
 ### Frontend (React)
 
 ```bash
-cd cpe-frontend
+cd frontend
 npm install
 npm start
 ```
