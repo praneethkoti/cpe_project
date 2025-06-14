@@ -57,31 +57,35 @@ The goal of this assignment was to:
 ### 🔧 Backend (Flask + SQLite)
 
 ```bash
-# Setup virtual environment
+# 1. Setup virtual environment
 python -m venv venv
+
+# If you see an error about scripts being disabled (ExecutionPolicy), run this first:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+# Then activate the virtual environment:
 ./venv/Scripts/activate
 
+# 2. Install dependencies
 pip install -r requirements.txt
-```
 
-```bash
+# 3. Parse XML to create database
 cd backend
 # Parse XML
-python parse_cpe.py
-```
-This created cpes.db which contains the required data
+python parse_cpe.py # This creates 'cpes.db' which contains the required data
 
-```bash
-# Start API server
+# 4. Start API server
 python app.py
 ```
 
 ### Frontend (React)
-
+## In a new terminal window:
 ```bash
 cd frontend
 npm install
 npm start
+
+# This will launch the frontend React app (usually at http://localhost:3000) and connect to the backend API (on http://localhost:5000).
 ```
 
 ---
