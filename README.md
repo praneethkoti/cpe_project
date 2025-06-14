@@ -91,7 +91,7 @@ npm start
 ### API Output
 
 * `/api/cpes?page=1&limit=15`
-* `/api/cpes/search?cpe_title=windows&`
+* `/api/cpes/search?cpe_title=windows`
 
 ### React UI
 
