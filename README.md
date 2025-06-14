@@ -1,10 +1,8 @@
 #  CPE Data Collection and API
 This project is to collect and parse XML data, save it in database, create API using Flask and then show that data on web using React frontend.
 
-> ✅ **GitHub Repository:** [https://github.com/praneethkoti/cpe\_project](https://github.com/praneethkoti/cpe_project)
 
-
-## What is our Objective?
+## Project's Objective?
 
 The goal of this assignment was to:
 
@@ -15,7 +13,7 @@ The goal of this assignment was to:
 * Show the data in a clean and responsive **React UI**
 
 
-## 🧠 Logical Approach
+## My Logical Approach
 
 1. **XML Parsing**:
 
@@ -78,7 +76,7 @@ python data_insert.py
 python api_server.py
 ```
 
-### 🌐 Frontend (React)
+### Frontend (React)
 
 ```bash
 cd cpe-frontend
@@ -88,33 +86,21 @@ npm start
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
-### ✅ API Output
+### API Output
 
 * `/api/cpes?page=1&limit=10`
 * `/api/cpes/search?cpe_title=windows&deprecation_date=2024-01-01`
 
-### ✅ React UI
+### React UI
 
 * Paginated table (15–50 entries per page)
 * Filters on title, uri, and deprecation date
 * “+X more” links with popover
 * Fallback screen when no results
 
-> 📁 Please check the `screenshots/` folder in this repo for all sample images.
-
----
-
-## Evaluation Criteria Mapping
-
-| Criteria            | How It Is Completed                                               |
-| ------------------- | ----------------------------------------------------------------- |
-| **Correctness**     | Data is parsed, stored, and queried correctly                     |
-| **Code Quality**    | Code is modular and comments are added for understanding          |
-| **Database Design** | Clean schema using proper types and JSON fields                   |
-| **API Design**      | Flask RESTful API with filters and pagination                     |
-| **Frontend UI**     | React app with filters, clean UI, and fallback when no data found |
+> Please check the `screenshots/` folder in this repo for all sample images.
 
 ---
 
