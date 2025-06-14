@@ -63,7 +63,7 @@ python -m venv venv
 
 pip install -r requirements.txt
 ```
-Before parsing the data the extract the xml and rename it to cpe_dict.xml need to be placed in backend/data/cpe_dict.xml
+
 ```bash
 cd backend
 # Parse XML
